@@ -4,10 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Link Tag -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS link -->
   <link rel="stylesheet" href="./style.css">
+
   <title>Bookmark Landing Page</title>
 </head>
 <body>
-  <h1>I love Web Development</h1>
+  <!-- =============== Header =============== -->
+  <header>
+    <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+      <div class="py-1"><img src="./imgs/logo-bookmark.svg" alt="bookmarkLogo"></div>
+      <ul class="hidden sm:flex flex-1 justify-end items-center space-x-12 
+                  px-4 text-bookmark-blue text-sm font-semibold uppercase font-sans">
+        <li class ="cursor-pointer">Features</li>
+        <li class ="cursor-pointer">Price</li>
+        <li class ="cursor-pointer">Contact</li>
+        <button type="button" class="py-2 px-6 text-white text-sm bg-bookmark-red 
+        rounded-md outline-none border-0 font-semibold uppercase">
+        Login</button>
+      </ul>
+
+      <div class="flex flex-1 items-center justify-end px-4 sm:hidden" >
+        <i class="text-xl cursor-pointer fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
