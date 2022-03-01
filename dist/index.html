@@ -4,16 +4,326 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome Link Tag -->
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS link -->
   
+
   <title>Bookmark Landing Page</title>
-  <link rel="stylesheet" href="/assets/index.75522b50.css">
+  <link rel="stylesheet" href="/assets/index.366a8647.css">
 </head>
 <body>
+
   <!-- =============== Header =============== -->
   <header>
-    <nav class="container">
-      <h1>I love web development</h1>
+    <nav class="container flex items-center py-4 mt-4 sm:mt-12">
+      <div class="py-1"><img src="/assets/logo-bookmark.a4fb5feb.svg" alt="" /></div>
+      <ul class="hidden sm:flex flex-1 justify-end items-center space-x-10 text-bookmark-blue uppercase text-sm font-semibold px-3">
+        <a href="#feature"><li class="cursor-pointer">Features</li></a>
+        <a href="#download"><li class="cursor-pointer">Download</li></a>
+        <a href="#faq"><li class="cursor-pointer">Contact</li></a>
+        <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase font-semibold hover:bg-black hover:text-white">Login</button>
+      </ul>
+      <div class="flex sm:hidden flex-1 justify-end px-4">
+        <i class="text-2xl fas fa-bars"></i>
+      </div>
     </nav>
   </header>
+
+  <!-- ================ Hero =================== -->
+  <section class="relative">
+    <div class="container flex flex-col-reverse items-center mt-14
+                lg:flex-row lg:mt-24 lg:space-x-12">
+
+      <!-- Content -->
+      <div class="flex flex-1 flex-col items-center mt-8 
+                  lg:mt-0 lg:items-start">
+
+          <h2 class="text-bookmark-blue text-2xl mb-6
+                    md:text-2xl lg:text-3xl">
+            A Sample Bookmark Manager
+          </h2>
+
+          <p class="text-bookmark-gray text-lg mb-6 text-center w-5/6
+                    lg:text-left lg:w-full">
+            A clean and simple interface to organize your favorite websites. Open a new browser tab and 
+            see your sites load instantly. Try it for free.
+          </p>
+        <div class="flex justify-center flex-wrap
+                    lg:justify-start">
+          <button type="button" class="btn btn-purple mr-6
+                                      hover:bg-bookmark-white hover:text-black">
+            Get it on Chrome
+          </button>
+          <button type="button" class="btn btn-white 
+                                      hover:bg-bookmark-purple hover:text-white">
+            Get it on Firefox
+          </button>
+        </div>
+      </div>
+      <!-- Hero Image -->
+      <div class="flex flex-1 justify-center mb-10 z-10
+                  md:mb-12 lg:mb-0">
+        <img src="/assets/hero-bg.006392f7.png" alt="hero-image" class="w-4/5 sm:w-3/4 md:w-10/12">
+      </div>
+    </div>
+    <!-- Rounded Rectangle -->
+    <div class="hidden md:block overflow-hidden absolute top-40 right-0 lg:top-32
+                bg-bookmark-purple rounded-l-full h-56 w-2/5 lg:w-2/6">
+    </div>
+  </section>
+
+  <!-- ================ Features ================ -->
+
+  <section class="py-20 mt-20 lg:mt-60 bg-bookmark-white" id="feature">
+    <!------- Heading ------->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <h1 class="text-center text-3xl text-bookmark-blue">Features</h1>
+      <p class="text-center text-bookmark-gray mt-4">
+        Our aim is to make it quick and easy for you to organize your favorite websites. Your 
+        bookmark sync between your devices so you can access them on the go
+      </p>
+    </div>
+    <!------- Features #1 ------->
+    <div class="relative mt-20 lg:mt-24">
+      <div class="container flex flex-col lg:flex-row
+                  items-center justify-center lg:space-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img src="/assets/illustration-features-tab-1.239a78af.png" alt="feature1"
+               class="w-5/6 h-5/6 sm:3/4 sm:h-3/4 md:w-4/5 md:h-4/5">
+        </div>
+
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center w-full justify-center lg:items-start">
+          <h1 class="text-2xl text-bookmark-blue">Bookmark in on click</h1>
+          <p class="text-bookmark-gray my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favorite site.
+          </p>
+          <button type="button" class="btn btn-purple
+                                      hover:bg-bookmark-white hover:text-black">
+            More Info
+          </button>
+        </div>
+
+      </div>
+      <!-- Rounded Rectangle -->
+        <div class="hidden lg:block overflow-hidden absolute lg:top-28
+        bg-bookmark-purple rounded-r-full h-56 w-2/5 lg:w-2/6">
+        </div>
+
+    </div>
+
+    <!------- Features #2 ------->
+    <div class="relative mt-20 lg:mt-52">
+      <div class="container flex flex-col lg:flex-row-reverse
+                  items-center justify-center lg:space-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img src="/assets/illustration-features-tab-2.7cbb0898.png" alt="feature1"
+               class="w-5/6 h-5/6 sm:3/4 sm:h-3/4 md:w-4/5 md:h-4/5">
+        </div>
+
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center w-full justify-center lg:items-start">
+          <h1 class="text-2xl text-bookmark-blue">Intelligent Search</h1>
+          <p class="text-bookmark-gray my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favorite site.
+          </p>
+          <button type="button" class="btn btn-purple
+                                      hover:bg-bookmark-white hover:text-black">
+            More Info
+          </button>
+        </div>
+
+      </div>
+      <!-- Rounded Rectangle -->
+        <div class="hidden lg:block overflow-hidden absolute lg:top-40 right-0
+        bg-bookmark-purple rounded-l-full h-56 w-2/5 lg:w-2/6">
+        </div>
+
+    </div>
+
+    <!------- Features #3 ------->
+    <div class="relative mt-20 lg:mt-52">
+      <div class="container flex flex-col lg:flex-row
+                  items-center justify-center lg:space-x-24">
+        <!-- Image -->
+        <div class="flex flex-1 justify-center z-10 mb-10 lg:mb-0">
+          <img src="/assets/illustration-features-tab-3.6a73db39.png" alt="feature1"
+               class="w-5/6 h-5/6 sm:3/4 sm:h-3/4 md:w-4/5 md:h-4/5">
+        </div>
+
+        <!-- Content -->
+        <div class="flex flex-1 flex-col items-center w-full justify-center lg:items-start">
+          <h1 class="text-2xl text-bookmark-blue">Share your Bookmarks</h1>
+          <p class="text-bookmark-gray my-4 text-center lg:text-left sm:w-3/4 lg:w-full">
+            East share bookmarks and collections with others. Create a sharable link that you 
+            can send to your friends and colleagues.
+          </p>
+          <button type="button" class="btn btn-purple
+                                      hover:bg-bookmark-white hover:text-black">
+            More Info
+          </button>
+        </div>
+
+      </div>
+      <!-- Rounded Rectangle -->
+        <div class="hidden lg:block overflow-hidden absolute lg:top-40
+        bg-bookmark-purple rounded-r-full h-56 w-2/5 lg:w-2/6">
+        </div>
+
+    </div>
+  </section>
+
+  <!-- ================ Download ================ -->
+  <section class="py-20 mt-20" id="download"> 
+    <!------- Heading ------->
+    <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+      <h1 class="text-center text-3xl text-bookmark-blue">Download the Extensions</h1>
+      <p class="text-center text-bookmark-gray mt-4">
+        We've got more Browsers in the pipeline.Please let us know your interest. Your 
+        bookmark sync between your devices so you can access them on the go
+      </p>
+    </div>
+    <!------- Cards ------->
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 
+                gap-16 max-w-screen-lg mt-16">
+      <!-- card #1 -->
+      <div class="flex flex-col rounded-md shadow-md lg:mb-16">
+        <div class="p-6 flex flex-col items-center">
+          <img src="/assets/logo-chrome.aa97d7b0.svg" alt="">
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Chrome</h3>
+          <p class="mb-2 text-bookmark-gray font-light">Minimum Version 6.2</p>
+        </div>
+        <hr class="border-b border-bookmark-white">
+        <div class="flex p-6 justify-center">
+          <button type="button" class="btn btn-purple
+                                      hover:bg-bookmark-white hover:text-black">
+            Add & Install Extension
+          </button>
+        </div>
+      </div>
+
+      <!-- card #2 -->
+      <div class="flex flex-col rounded-md shadow-md lg:my-8">
+        <div class="p-6 flex flex-col items-center">
+          <img src="/assets/logo-opera.dd5601d3.svg" alt="">
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Opera</h3>
+          <p class="mb-2 text-bookmark-gray font-light">Minimum Version 4.2</p>
+        </div>
+        <hr class="border-b border-bookmark-white">
+        <div class="flex p-6 justify-center">
+          <button type="button" class="btn btn-purple
+                                      hover:bg-bookmark-white hover:text-black">
+            Add & Install Extension
+          </button>
+        </div>
+      </div>
+
+      <!-- card #3 -->
+      <div class="flex flex-col rounded-md shadow-md lg:mt-16">
+        <div class="p-6 flex flex-col items-center">
+          <img src="/assets/logo-firefox.0989e128.svg" alt="">
+          <h3 class="mt-5 mb-2 text-bookmark-blue text-lg">Add to Firefox</h3>
+          <p class="mb-2 text-bookmark-gray font-light">Minimum Version 8.2</p>
+        </div>
+        <hr class="border-b border-bookmark-white">
+        <div class="flex p-6 justify-center">
+          <button type="button" class="btn btn-purple
+                                      hover:bg-bookmark-white hover:text-black">
+            Add & Install Extension
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================ FAQ ================ -->
+  <section class="bg-bookmark-white py-20" id="faq">
+    <div class="container">
+      <!------- Heading ------->
+      <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <h1 class="text-center text-3xl text-bookmark-blue">Frequently Asked Questions</h1>
+        <p class="text-center text-bookmark-gray mt-4">
+          Here are some of the most frequently asked questions. If you have any other questions,
+          please feel free to contact us.
+        </p>
+      </div>
+      <!-- FAQ Items -->
+      <div class="flex flex-col sm:w-3/4 lg:5/12 mt-12 mx-auto">
+        <div class="flex items-center border-b py-4 px-2">
+          <span class="flex-1 text-lg font-medium">What is Bookmark ?</span>
+          <i class="text-bookmark-purple fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="flex items-center border-b py-4 px-2">
+          <span class="flex-1 text-lg font-medium">How can I request a new Browser ?</span>
+          <i class="text-bookmark-purple fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="flex items-center border-b py-4 px-2">
+          <span class="flex-1 text-lg font-medium">Is there a mobile App ?</span>
+          <i class="text-bookmark-purple fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="flex items-center border-b py-4 px-2">
+          <span class="flex-1 text-lg font-medium">What about other than chrome browser ?</span>
+          <i class="text-bookmark-purple fa-solid fa-chevron-down"></i>
+        </div>
+
+        <button type="button" class="btn btn-purple flex self-center mt-12
+                                      hover:bg-bookmark-white hover:text-black">
+            More Info
+          </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ Contact ================ -->
+  <section class="bg-bookmark-purple text-white py-20">
+  <div class="container">
+    <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+      <p class="font-light uppercase text-center mb-8">35,000+ Already Joined</p>
+      <h1 class="text-3xl text-center">Stay up-to-date with what we're doing</h1>
+      <div class="flex flex-col sm:flex-row gap-6 mt-8">
+        <input type="text" name="email" id="email" placeholder="Enter your Email Address" 
+               class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black">
+        <button type="button" class="bg-bookmark-red text-white rounded-md px-5 py-3  font-semibold
+                                    hover:bg-black hover:text-white">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ================ Footer ================ -->
+  <section class="bg-bookmark-blue py-8">
+    <div class="container flex flex-col md:flex-row items-center">
+      <div class="flex flex-1 flex-wrap items-center justify-center 
+                  md:justify-start gap-12">
+        <img src="data:image/png;base64,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" alt="bookmark-logo" class="text-white">
+        <ul class="flex text-white uppercase gap-12 text-sm">
+          <a href="#feature"><li class="cursor-pointer">Features</li></a>
+        <a href="#download"><li class="cursor-pointer">Download</li></a>
+        <a href="#faq"><li class="cursor-pointer">Contact</li></a>
+        </ul>
+      </div>
+      
+      <div class="flex gap-10 mt-12 md:mt-0">
+        <li class="list-none cursor-pointer"><i class="text-white text-2xl fa-brands fa-facebook-square"></i></li>
+        <li class="list-none cursor-pointer"><i class="text-white text-2xl fa-brands fa-twitter-square"></i></li>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
