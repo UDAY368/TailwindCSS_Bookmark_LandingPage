@@ -23,10 +23,10 @@
     <nav class="container flex items-center py-4 mt-4 sm:mt-12">
       <div class="py-1"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
       <ul class="hidden sm:flex flex-1 justify-end items-center space-x-10 text-bookmark-blue uppercase text-sm font-semibold px-3">
-        <li class="cursor-pointer">Features</li>
-        <li class="cursor-pointer">Pricing</li>
-        <li class="cursor-pointer">Contact</li>
-        <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase font-semibold">Login</button>
+        <a href="#feature"><li class="cursor-pointer">Features</li></a>
+        <a href="#download"><li class="cursor-pointer">Download</li></a>
+        <a href="#faq"><li class="cursor-pointer">Contact</li></a>
+        <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase font-semibold hover:bg-black hover:text-white">Login</button>
       </ul>
       <div class="flex sm:hidden flex-1 justify-end px-4">
         <i class="text-2xl fas fa-bars"></i>
@@ -79,7 +79,7 @@
 
   <!-- ================ Features ================ -->
 
-  <section class="py-20 mt-20 lg:mt-60 bg-bookmark-white">
+  <section class="py-20 mt-20 lg:mt-60 bg-bookmark-white" id="feature">
     <!------- Heading ------->
     <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
       <h1 class="text-center text-3xl text-bookmark-blue">Features</h1>
@@ -183,7 +183,7 @@
   </section>
 
   <!-- ================ Download ================ -->
-  <section class="py-20 mt-20">
+  <section class="py-20 mt-20" id="download"> 
     <!------- Heading ------->
     <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
       <h1 class="text-center text-3xl text-bookmark-blue">Download the Extensions</h1>
@@ -247,7 +247,7 @@
   </section>
 
   <!-- ================ FAQ ================ -->
-  <section class="bg-bookmark-white py-20">
+  <section class="bg-bookmark-white py-20" id="faq">
     <div class="container">
       <!------- Heading ------->
       <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
@@ -283,6 +283,43 @@
                                       hover:bg-bookmark-white hover:text-black">
             More Info
           </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================ Contact ================ -->
+  <section class="bg-bookmark-purple text-white py-20">
+  <div class="container">
+    <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+      <p class="font-light uppercase text-center mb-8">35,000+ Already Joined</p>
+      <h1 class="text-3xl text-center">Stay up-to-date with what we're doing</h1>
+      <div class="flex flex-col sm:flex-row gap-6 mt-8">
+        <input type="text" name="email" id="email" placeholder="Enter your Email Address" 
+               class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black">
+        <button type="button" class="bg-bookmark-red text-white rounded-md px-5 py-3  font-semibold
+                                    hover:bg-black hover:text-white">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ================ Footer ================ -->
+  <section class="bg-bookmark-blue py-8">
+    <div class="container flex flex-col md:flex-row items-center">
+      <div class="flex flex-1 flex-wrap items-center justify-center 
+                  md:justify-start gap-12">
+        <img src="./imgs/logo-bookmark-white.png" alt="bookmark-logo" class="text-white">
+        <ul class="flex text-white uppercase gap-12 text-sm">
+          <a href="#feature"><li class="cursor-pointer">Features</li></a>
+        <a href="#download"><li class="cursor-pointer">Download</li></a>
+        <a href="#faq"><li class="cursor-pointer">Contact</li></a>
+        </ul>
+      </div>
+      <div class="flex gap-10 mt-12 md:mt-0">
+        <li class="list-none cursor-pointer"><i class="text-white text-2xl fa-brands fa-facebook-square"></i></li>
+        <li class="list-none cursor-pointer"><i class="text-white text-2xl fa-brands fa-twitter-square"></i></li>
       </div>
     </div>
   </section>
